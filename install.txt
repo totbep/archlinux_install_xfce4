@@ -1,1 +1,21 @@
-#zkouska
+#nastaveni ceske klavesnice
+loadkeys cz-qwertz
+
+#pingnuti jestli funguje internet s parametrem c ktery se postara o 3 pingnuti
+ping -c 3 www.google.com
+
+#zacatek rozdeleni disku
+cfdisk
+
+#rozdeleni disku na 3 casti
+#sda1 - primary - bootable - 10GB
+#sda2 - primary - swap     - 4GB
+#sda3 - primary -          - zbytek
+
+#zformatovani partu
+mkfs.ext4 /dev/sda1
+mkfs.ext4 /dev/sda3
+
+#"zalozeni" swapu a spusteni swapu
+mkswap /dev/sda2
+swapon /dev/sda2
