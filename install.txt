@@ -19,3 +19,8 @@ mkfs.ext4 /dev/sda3
 #"zalozeni" swapu a spusteni swapu
 mkswap /dev/sda2
 swapon /dev/sda2
+
+#mountnuti
+mount /dev/sda1 /mnt
+mkdir /mnt/home
+mount /dev/sda3 /mnt/home
