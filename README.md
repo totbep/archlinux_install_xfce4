@@ -1,3 +1,3 @@
 # Instalace Archlinuxu a nainstalovani DE xfce4
 
-Some commands to install archlinux and desktop enviroment xfce4.
+Prikazy k nainstalovani archlinuxu a k nainstalovani DE xfce4
